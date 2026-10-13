@@ -1,0 +1,9 @@
+# Tested with Python 3.13 and exactly these versions:
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+# to run the notebooks:
+nbconvert==7.17.1
+ipykernel==7.4.0

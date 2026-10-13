@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use the data or the code, please cite them as below."
+title: "Twin-run experiments with a deterministic LPJ-GUESS: kick response and long-term divergence (one grid cell, P1400)"
+type: dataset
+version: "1.0.0"
+date-released: "2026-10-11"
+license: CC-BY-4.0          # data; the code is MIT (see LICENSE and LICENSE-DATA.md)
+authors:
+  - family-names: Eisenhauer
+    given-names: Jakob
+    affiliation: "Lund University"
+  - family-names: van Rens
+    given-names: Petran
+    affiliation: "Lund University"
+keywords:
+  - LPJ-GUESS
+  - dynamic global vegetation model
+  - dynamical systems
+  - perturbation experiment
+  - LASSO
+  - hierarchical clustering
+references:
+  - type: article
+    title: "Implications of incorporating N cycling and N limitations on primary production in an individual-based dynamic vegetation model"
+    authors:
+      - family-names: Smith
+        given-names: Benjamin
+      - name: "et al."
+    journal: "Biogeosciences"
+    volume: 11
+    start: 2027
+    end: 2054
+    year: 2014
+    doi: "10.5194/bg-11-2027-2014"
