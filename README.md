@@ -4,6 +4,8 @@ LPJ-GUESS 4.1.1 (cohort mode, one patch, constant climate, no random numbers) is
 At one tropical-African grid cell (P1400, about 1400 mm rain per year, forest-savanna band) we perturb the model slightly
 and follow the difference to an unperturbed control run, with and without fire.
 
+Data and code: https://github.com/J-Eisenhauer/LPJ_Guess_chaotic_system
+
 | notebook | content | methods |
 |---|---|---|
 | `00_overview_data_FAIR.ipynb` | problem, workflow, data description, FAIR reflection, licence | - |
@@ -12,7 +14,8 @@ and follow the difference to an unperturbed control run, with and without fire.
 
 The project has two halves. The model half (LPJ-GUESS patches and run scripts) is not published here; LPJ-GUESS itself is available from
 its developers (https://web.nateko.lu.se/lpj-guess/) and with frozen stochastics it can generate the dataset. The model half ends in
-one file, `data/p1400_twin_runs.csv`. This folder is the analysis half: everything from that csv to the figures.
+one table, `data/p1400_twin_runs_part1.csv` to `_part3.csv` (split in three files because of the upload size limit; the notebooks join them row by row).
+This folder is the analysis half: everything from that table to the figures.
 
 
 ## Files
@@ -20,7 +23,7 @@ one file, `data/p1400_twin_runs.csv`. This folder is the analysis half: everythi
 ```
 00_*.ipynb 01_*.ipynb 02_*.ipynb   the analysis, with outputs; settings at the top of each notebook
 plotlib.py                         the plot functions used by the notebooks
-data/p1400_twin_runs.csv           the data (one row = one model year of one run)
+data/p1400_twin_runs_part[1-3].csv  the data in three files with the same columns (one row = one model year of one run)
 data/columns.csv                   every column with unit and meaning
 CITATION.cff  LICENSE  LICENSE-DATA.md  requirements.txt
 ```

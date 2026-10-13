@@ -5,6 +5,8 @@ type: dataset
 version: "1.0.0"
 date-released: "2026-10-11"
 license: CC-BY-4.0          # data; the code is MIT (see LICENSE and LICENSE-DATA.md)
+repository-code: "https://github.com/J-Eisenhauer/LPJ_Guess_chaotic_system"
+url: "https://github.com/J-Eisenhauer/LPJ_Guess_chaotic_system"
 authors:
   - family-names: Eisenhauer
     given-names: Jakob
