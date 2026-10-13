@@ -1,0 +1,25 @@
+name,unit,description
+experiment,,"'short_kick' (state/forcing kicks, 512 years) or 'long_rain' (one year of rain x (1+eps), 4580 years)."
+mode,,"Model configuration: 'A_nofire' (fire off) or 'C_fire_accumulate' (deterministic fire: yearly fire probability is summed, one full fire when the sum reaches 1)."
+member,,"Run name. 'member_000' is the unperturbed control; member_001 ... are perturbed runs (100 per mode in short_kick, 30 per mode in long_rain)."
+t,yr,Years after the perturbation. short_kick: 0 (restart/kick year) to 512. long_rain: -20 to 4579 (20 unperturbed years before the rain perturbation at t = 0).
+year,yr,Simulation calendar year of LPJ-GUESS (spin-up ends at 2000).
+cmass_Total,kgC m-2,Total vegetation carbon (all PFTs). Short experiment only.
+lai_Total,m2 m-2,Leaf area index (all PFTs). Short experiment only.
+dens_TrBE,indiv m-2,Density of the tropical broadleaved evergreen tree PFT (TrBE). Short experiment only.
+anpp_Total,kgC m-2 yr-1,Annual net primary production (all PFTs). Short experiment only.
+cflux_NEE,kgC m-2 yr-1,"Net ecosystem exchange, positive = carbon lost to the atmosphere. NEE = Veg + Repr + Soil + Fire + Est (LPJ-GUESS cflux.out); Repr, Fire and Est are not separate columns here. Present in both experiments."
+cflux_Soil,kgC m-2 yr-1,Heterotrophic respiration (soil + litter). Short experiment only.
+cflux_Veg,kgC m-2 yr-1,Vegetation carbon flux (= -NPP). Short experiment only.
+npool_Total,kgN m-2,Total ecosystem nitrogen (vegetation + litter + soil). Short experiment only.
+u_sap_c,1,"Short experiment only: kick of sapwood carbon, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u) in the restart year. Constant for the whole run; 0 for the control; empty in the long experiment."
+u_heart_c,1,"Short experiment only: kick of heartwood carbon, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_tree_density,1,"Short experiment only: kick of tree density, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_litter_c,1,"Short experiment only: kick of litter carbon, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_soil_c_fast,1,"Short experiment only: kick of fast soil carbon pool, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_soil_c_slow,1,"Short experiment only: kick of slow soil carbon pool, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_soil_n,1,"Short experiment only: kick of nitrogen in soil organic matter (not mineral N), u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_rain,1,"Short experiment only: kick of precipitation of the restart year, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+u_temp,1,"Short experiment only: kick of temperature of the restart year, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as + 0.1 K * u. Constant for the whole run; 0 for the control; empty in the long experiment."
+u_sun,1,"Short experiment only: kick of shortwave radiation of the restart year, u in [-1, 1] (Latin-hypercube design, seed 7). Applied as x (1 + 0.01 u). Constant for the whole run; 0 for the control; empty in the long experiment."
+rain_eps,1,"Long experiment only: eps of the rain perturbation (rain of year t = 0 multiplied by 1 + eps), eps = 0.01 * standard normal draw (numpy default_rng(42)); 0 for the control; empty in the short experiment."
