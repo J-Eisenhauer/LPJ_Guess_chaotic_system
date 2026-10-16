@@ -30,7 +30,7 @@ CITATION.cff  LICENSE  LICENSE-DATA.md  requirements.txt
 
 `figures/` is created when the notebooks run.
 
-Provenance of the data, the FAIR reflection and the known limitations are in `00_overview_data_FAIR.ipynb` and in
+The FAIR reflection and the known limitations are in `00_overview_data_FAIR.ipynb` and in
 the caveat sections of notebooks 01 and 02.
 
 ## Licence and citation
